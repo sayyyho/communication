@@ -2,7 +2,7 @@ import random
 import math
 import matplotlib.pyplot as plt
 
-attempt = 300000
+attempt = 500000
 glass_num, member = map(int, input("please input glass data and people data : ").split())
 result = [0 for _ in range(member)] #0으로 초기화
 mark_number = [i for i in range(1, member+1)] #matplotlib.pyplot에서 x축 정보를 list로 받기 때문
@@ -98,8 +98,3 @@ for _ in range(attempt):
     survival_sum += simulation()
 
 evaluate_result()
-
-
-
-
-
